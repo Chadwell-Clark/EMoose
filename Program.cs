@@ -2,12 +2,16 @@
 
 Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
 Console.WriteLine("--------------------------------------------");
-MooseSays();
+Console.WriteLine();
+MooseSays("H I, I' M  E N T H U S I A S T I C !");
+MooseSays("Really I am enthusiastic");
 
+bool isTrue = MooseAsks("Is Canada real?");
+Console.WriteLine(isTrue);
 
-void MooseSays()
+void MooseSays(string message)
 {
-    Console.WriteLine(@"
+    Console.WriteLine($@"
                                        _.--^^^--,
                                     .'          `\
   .-^^^^^^-.                      .'              |
@@ -24,7 +28,7 @@ void MooseSays()
                '-'    | /       \ |
                       |  .-. .-.  |
                       \ / o| |o \ /
-                       |   / \   |    H I, I'M  E N T H U S I A S T I C !
+                       |   / \   |   {message}
                       / `^`   `^` \
                      /             \
                     | '._.'         \
@@ -35,4 +39,25 @@ void MooseSays()
                       \ \'._  ` '_.'
                        `^^` `^^^`
     ");
+}
+
+bool MooseAsks(string question)
+{
+    Console.Write($"{question} (Y/N): ");
+    string answer = Console.ReadLine().ToLower();
+
+    while (answer != "y" && answer != "n")
+    {
+        Console.Write($"{question} (Y/N): ");
+        answer = Console.ReadLine().ToLower();
+    }
+
+    if (answer == "y")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
