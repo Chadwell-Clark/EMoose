@@ -15,40 +15,11 @@ void Main()
     //Ask a Question
     Question("Is Canada real?", "Really? It seems very unlikely.", "I  K N E W  I T !!!");
     Question("Do you love Moose Muck?", "Welcome to the portage!", "How will you get your canoe to the next lake?");
-    // CanadaQuestion();
-    // LoveMooseMuckQuestion();
-    // EnthusiasticQuestion();
-    // LoveCSharpQuestion();
-    // SecretQuestion();
+
 }
 
 
-// void CanadaQuestion()
-// {
-//     bool isTrue = MooseAsks("Is Canada real?");
-//     if (isTrue)
-//     {
-//         MooseSays("Really? It seems very unlikely.");
-//     }
-//     else
-//     {
-//         MooseSays("I  K N E W  I T !!!");
-//     }
-// }
 
-
-// void LoveMooseMuckQuestion()
-// {
-//     bool doesLoveMooseMuck = MooseAsks("Do you love Moose Muck?");
-//     if (doesLoveMooseMuck)
-//     {
-//         MooseSays("Welcome to the portage!");
-//     }
-//     else
-//     {
-//         MooseSays("How will you get your canoe to the next lake?");
-//     }
-// }
 // void EnthusiasticQuestion()
 // {
 //     bool isEnthusiastic = MooseAsks("Are you enthusiastic?");
